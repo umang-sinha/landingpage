@@ -24,6 +24,11 @@ body {
     position: relative;
 }
 
+.bar{
+    position: relative;
+    z-index: 2;
+}
+
 .nav-bar{
     flex-basis: 10%;
     /*background: magenta;*/
@@ -163,6 +168,7 @@ body {
 .icon{
     display: flex;
     flex-basis: 35%;
+    opacity: 0.5;
     /*background: tomato;*/
 }
 
@@ -195,6 +201,7 @@ body {
     display: flex;
     justify-content: flex-end;
     overflow: hidden;
+    transition: 0.5s;
 }
 
 .side-bar ul{
@@ -205,6 +212,23 @@ body {
 .side-bar ul li{
     list-style: none;
     margin: 45px 0px;
+    transform: translateX(210px);
+}
+
+.side-bar ul li:nth-child(1){
+    transition: 0.3s ease 0.1s;
+}
+
+.side-bar ul li:nth-child(2){
+    transition: 0.3s ease 0.2s;
+}
+
+.side-bar ul li:nth-child(3){
+    transition: 0.3s ease 0.3s;
+}
+
+.side-bar ul li:nth-child(4){
+    transition: 0.3s ease 0.4s;
 }
 
 .side-bar ul li a{
@@ -221,4 +245,18 @@ body {
 
 .side-bar-js {
     clip-path: circle(45% at 100% 0%);
+}
+
+.sideBarList-js{
+    transform: translateX(0px) !important;
+}
+
+.footer-text {
+    font-family:  'Press Start 2P', cursive;
+    color: #aaabad;
+    font-size: small;
+    position:absolute;
+    bottom:10px;
+    left:50%;
+    transform: translateX(-50%);
 }
