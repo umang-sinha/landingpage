@@ -158,3 +158,26 @@ body {
     color: white;
     transition: 0.3s;
 }
+
+.icon{
+    display: flex;
+    flex-basis: 35%;
+    /*background: tomato;*/
+}
+
+.icon i{
+    margin: 0px 10px;
+    cursor: pointer;
+}
+
+.blackIcon{
+    color: #445963;
+}
+
+.redIcon{
+    color: #ff0000;
+}
+
+.blueIcon{
+    color: #3687d3;
+}
