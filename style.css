@@ -191,7 +191,7 @@ body {
     position: absolute;
     right: 0px;
     top: 0px;
-    clip-path: circle(45% at 100% 0%);
+    clip-path: circle(0% at 100% 0%);
     display: flex;
     justify-content: flex-end;
     overflow: hidden;
@@ -217,4 +217,8 @@ body {
     color: white;
     font-size: 13px;
     transition: 0.3s;
+}
+
+.side-bar-js {
+    clip-path: circle(45% at 100% 0%);
 }
